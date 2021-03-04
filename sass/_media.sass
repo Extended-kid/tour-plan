@@ -9,7 +9,7 @@
   .navbar
     &-top
       padding: 30px 0
-    &-search
+    &__search
       margin-left: auto
     &-menu
       padding: 22px 0
@@ -21,7 +21,9 @@
       width: 340px
 @media   ( max-width: 768px )
   .container
-    max-width: 576px
+    max-width: 700px
+@media   ( max-width: 767px )
+  .container
     width: 92%
   .navbar
     &__search, &__user, &-menu
@@ -43,3 +45,9 @@
 @media   ( max-width: 576px )
   .logo
     width: 99px
+@media   ( max-width: 320px )
+  .navbar
+    &-top
+      padding: 28px 0 29px
+  .logo
+    height: 13px
