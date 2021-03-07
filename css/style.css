@@ -453,6 +453,30 @@ template {
   color: #333333;
 }
 
+.breadcrumb {
+  padding: 18px 0;
+}
+
+.breadcrumb-list {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  line-height: 13px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumb-list__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.breadcrumb-list__item:not(:last-child)::after {
+  content: '/';
+  margin-right: 4px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
