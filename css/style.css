@@ -531,8 +531,9 @@ template {
   color: #fff;
   background-color: #EC1F46;
   text-align: center;
-  width: 65px;
-  height: 45px;
+  min-width: 65px;
+  max-width: 65px;
+  min-height: 45px;
   border-radius: 4px;
 }
 
