@@ -619,6 +619,9 @@ template {
     height: 1px;
     background-color: #333333;
   }
+  .hotel {
+    padding-top: 5px;
+  }
   .hotel-info {
     width: 100%;
   }
