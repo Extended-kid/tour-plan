@@ -515,6 +515,7 @@ template {
   background-color: #EC1F46;
   border-radius: 3px;
   padding: 4px 9px;
+  margin-top: 4px;
 }
 
 .hotel-info__description {
