@@ -523,6 +523,10 @@ template {
   flex-basis: 100%;
 }
 
+.stars {
+  display: flex;
+}
+
 .stars__star {
   margin-right: 2px;
 }
