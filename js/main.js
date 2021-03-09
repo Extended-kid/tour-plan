@@ -13,3 +13,15 @@ const swiper = new Swiper('.swiper-container', {
     prevEl: '.hotel-slider__button_prev',
   },
 });
+
+
+document.onkeydown = function(e) {
+    switch (e.keyCode) {
+        case 37:
+            swiper.slidePrev(300, true)
+            break;
+        case 39:
+            swiper.slideNext(300, true)
+            break;
+    }
+};
