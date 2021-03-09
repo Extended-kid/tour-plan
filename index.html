@@ -7,6 +7,7 @@
   <title>Best Rout Plan - Hotel Booking</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -88,9 +89,33 @@
         <!-- /.hotel-info-rating -->
       </div>
       <!-- /.hotel-info -->
+      <div class="hotel-grid">
+        <div class="hotel-slider">
+          <!-- Slider main container -->
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide hotel-slider__slide hotel-slider__slide_gradient"><img class="hotel-slider-img" src="./img/hotel-slide-1.png" alt="slide photo"></div>
+              <div class="swiper-slide hotel-slider__slide hotel-slider__slide_gradient"><img class="hotel-slider-img" src="./img/hotel-slide-2.jpg" alt="slide photo"></div>
+              <div class="swiper-slide hotel-slider__slide hotel-slider__slide_gradient"><img class="hotel-slider-img" src="./img/hotel-slide-3.png" alt="slide photo"></div>
+              <div class="swiper-slide hotel-slider__slide hotel-slider__slide_gradient"><img class="hotel-slider-img" src="./img/hotel-slide-4.png" alt="slide photo"></div>
+              <div class="swiper-slide hotel-slider__slide hotel-slider__slide_gradient"><img class="hotel-slider-img" src="./img/hotel-slide-5.jpg" alt="slide photo"></div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <button class="hotel-slider__button hotel-slider__button_prev"></button>
+            <button class="hotel-slider__button hotel-slider__button_next"></button>
+          </div>
+          <!-- /.swiper-container -->
+        </div>
+        <!-- /.hotel-slider -->
+      </div>
+      <!-- /.hotel-grid -->
     </div>
     <!-- /.container -->
   </section>
   <!-- /.hotel -->
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
