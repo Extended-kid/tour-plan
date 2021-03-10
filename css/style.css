@@ -585,6 +585,11 @@ template {
   right: 16px;
 }
 
+.hotel-map {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 .hotel-booking {
   padding: 28px;
   background-color: #0A223D;
@@ -596,6 +601,7 @@ template {
 }
 
 .hotel-booking-and-map-wrapper {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -732,6 +738,9 @@ template {
   .container {
     max-width: 960px;
   }
+  .swiper-container {
+    width: 570px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -756,6 +765,31 @@ template {
   }
   .search__input {
     width: 340px;
+  }
+  .swiper-container {
+    width: 700px;
+    margin-bottom: 30px;
+  }
+  .hotel {
+    padding-bottom: 60px;
+  }
+  .hotel-grid {
+    flex-direction: column;
+  }
+  .hotel-booking-and-map-wrapper {
+    flex-direction: row;
+  }
+  .hotel-booking {
+    width: 48%;
+  }
+  .hotel-map {
+    width: 48%;
+  }
+  .hotel-booking {
+    padding: 24px;
+  }
+  .hotel-map__window {
+    height: 100%;
   }
 }
 
@@ -811,11 +845,35 @@ template {
   .hotel-info-rating {
     display: none;
   }
+  .swiper-container {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    margin-bottom: 25px;
+  }
 }
 
 @media (max-width: 576px) {
   .logo {
     width: 99px;
+  }
+  .swiper-container {
+    margin-bottom: 20px;
+    height: auto;
+    aspect-ratio: 16/11;
+  }
+  .hotel-booking-and-map-wrapper {
+    flex-wrap: wrap;
+  }
+  .hotel-booking {
+    width: 100%;
+    height: 210px;
+    margin-bottom: 20px;
+  }
+  .hotel-map {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
   }
 }
 
@@ -836,6 +894,15 @@ template {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+  .hotel {
+    padding-bottom: 40px;
+  }
+  .hotel-info {
+    padding-bottom: 38px;
+  }
+  .swiper-container {
+    height: 175px;
   }
 }
 /*# sourceMappingURL=style.css.map */
