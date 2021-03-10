@@ -39,6 +39,9 @@
     &-map
       &__window
         height: 100%
+  .newsletter
+    &-container
+      max-width: 700px
 @media   ( max-width: 768px )
   .container
     max-width: 700px
@@ -80,13 +83,18 @@
         flex-basis: auto
       &-rating
         display: none
-
+  .newsletter
+    &-container
+      max-width: 92%
   .swiper-container
     width: 100%
     height: auto
     aspect-ratio: 16/9
     margin-bottom: 25px
-
+@media   ( max-width: 700px )
+  .subscribe
+    &__input
+      flex-basis: 100%
 @media   ( max-width: 576px )
   .logo
     width: 99px
