@@ -791,12 +791,10 @@ template {
   }
   .hotel-booking {
     width: 48%;
+    padding: 24px 22px;
   }
   .hotel-map {
     width: 48%;
-  }
-  .hotel-booking {
-    padding: 24px;
   }
   .hotel-map__window {
     height: 100%;
