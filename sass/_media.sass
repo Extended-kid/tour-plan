@@ -1,9 +1,11 @@
 @media   ( max-width: 1200px )
   .container
     max-width: 960px
-  .swiper-container
+  .hotel__swiper
     width: 570px
-
+  .about
+    &__swiper
+      max-width: 92%
 @media   ( max-width: 992px )
   .container
     max-width: 700px
@@ -22,7 +24,7 @@
   .search
     &__input
       width: 340px
-  .swiper-container
+  .hotel__swiper
     width: 700px
     margin-bottom: 30px
   .hotel
@@ -42,9 +44,29 @@
   .newsletter
     &-container
       max-width: 700px
+  .about
+    &-slide
+      max-width: 80%
+      &:after
+        content: none
+      &:before
+        content: none
+    &__description
+      max-width: 80%
 @media   ( max-width: 768px )
   .container
     max-width: 700px
+  .about
+    padding-top: 40px
+    padding-bottom: 60px
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
+    &-slide
+      max-width: 579px
+    &__description
+      max-width: 455px
 @media   ( max-width: 767px )
   .container
     width: 92%
@@ -86,11 +108,12 @@
   .newsletter
     &-container
       max-width: 92%
-  .swiper-container
+  .hotel__swiper
     width: 100%
     height: auto
     aspect-ratio: 16/9
     margin-bottom: 25px
+
 @media   ( max-width: 700px )
   .subscribe
     &__input
@@ -98,7 +121,7 @@
 @media   ( max-width: 576px )
   .logo
     width: 99px
-  .swiper-container
+  .hotel__swiper
     margin-bottom: 20px
     height: auto
     aspect-ratio: 16/11
@@ -113,6 +136,9 @@
       width: 100%
       height: auto
       aspect-ratio: 16/9
+  .about
+    &__description
+      max-width: 90%
 @media   ( max-width: 320px )
   .container
     max-width: 280px
@@ -134,5 +160,22 @@
       padding-bottom: 38px
     &-map
       height: 173px
-  .swiper-container
+  .hotel__swiper
     height: 175px
+  .about
+    padding-bottom: 50px
+    &__title
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 42px
+    &__description
+      margin-bottom: 36px
+      max-width: 219px
+    &-slide
+      max-width: 281px
+    &-button
+      top: 45px
+      &_prev
+        left: 40.5px
+      &_next
+        right: 40.5px

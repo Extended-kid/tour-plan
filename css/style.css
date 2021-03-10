@@ -702,7 +702,7 @@ template {
   width: 100%;
 }
 
-.swiper-container {
+.hotel__swiper {
   border-radius: 8px;
   width: 728px;
   height: 450px;
@@ -829,6 +829,7 @@ template {
 }
 
 .about {
+  background-color: #F5FAFE;
   padding-top: 40px;
   padding-bottom: 70px;
 }
@@ -837,17 +838,131 @@ template {
   font-weight: bold;
   font-size: 36px;
   line-height: 45px;
+  margin-top: 0;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 70px;
+}
+
+.about__swiper {
+  max-width: 1074px;
+}
+
+.about-slide {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 45px;
+  max-width: 731px;
+}
+
+.about-slide::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 62px;
+  width: 70px;
+  height: 47px;
+  background-image: url(../img/quote-left.svg);
+  background-repeat: no-repeat;
+}
+
+.about-slide::after {
+  content: "";
+  position: absolute;
+  top: 119px;
+  right: 60px;
+  width: 70px;
+  height: 47px;
+  background-image: url(../img/quote-right.svg);
+  background-repeat: no-repeat;
+}
+
+.about-slide-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+  margin-top: -45px;
+}
+
+.about-slide__avatar {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  margin-bottom: 9px;
+}
+
+.about-slide__title {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #EC1F46;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.about-slide__visited {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+  margin-bottom: 4px;
+}
+
+.about__description {
+  font-size: 12px;
+  line-height: 160%;
+  width: 537px;
+  text-align: justify;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.about-button {
+  height: 30px;
+  width: 30px;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: none;
+  background-size: 10px;
+  background-color: transparent;
+}
+
+.about-button:focus {
+  outline: none;
+}
+
+.about-button_prev {
+  background-image: url("../img/arrow-prev-secondary.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0px;
+}
+
+.about-button_next {
+  background-image: url("../img/arrow-next-secondary.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 0px;
 }
 
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
   }
-  .swiper-container {
+  .hotel__swiper {
     width: 570px;
+  }
+  .about__swiper {
+    max-width: 92%;
   }
 }
 
@@ -874,7 +989,7 @@ template {
   .search__input {
     width: 340px;
   }
-  .swiper-container {
+  .hotel__swiper {
     width: 700px;
     margin-bottom: 30px;
   }
@@ -900,11 +1015,38 @@ template {
   .newsletter-container {
     max-width: 700px;
   }
+  .about-slide {
+    max-width: 80%;
+  }
+  .about-slide:after {
+    content: none;
+  }
+  .about-slide:before {
+    content: none;
+  }
+  .about__description {
+    max-width: 80%;
+  }
 }
 
 @media (max-width: 768px) {
   .container {
     max-width: 700px;
+  }
+  .about {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .about__title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 50px;
+  }
+  .about-slide {
+    max-width: 579px;
+  }
+  .about__description {
+    max-width: 455px;
   }
 }
 
@@ -957,7 +1099,7 @@ template {
   .newsletter-container {
     max-width: 92%;
   }
-  .swiper-container {
+  .hotel__swiper {
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
@@ -975,7 +1117,7 @@ template {
   .logo {
     width: 99px;
   }
-  .swiper-container {
+  .hotel__swiper {
     margin-bottom: 20px;
     height: auto;
     aspect-ratio: 16/11;
@@ -992,6 +1134,9 @@ template {
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
+  }
+  .about__description {
+    max-width: 90%;
   }
 }
 
@@ -1022,8 +1167,32 @@ template {
   .hotel-map {
     height: 173px;
   }
-  .swiper-container {
+  .hotel__swiper {
     height: 175px;
+  }
+  .about {
+    padding-bottom: 50px;
+  }
+  .about__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 42px;
+  }
+  .about__description {
+    margin-bottom: 36px;
+    max-width: 219px;
+  }
+  .about-slide {
+    max-width: 281px;
+  }
+  .about-button {
+    top: 45px;
+  }
+  .about-button_prev {
+    left: 40.5px;
+  }
+  .about-button_next {
+    right: 40.5px;
   }
 }
 /*# sourceMappingURL=style.css.map */
