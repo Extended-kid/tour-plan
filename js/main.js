@@ -25,3 +25,10 @@ document.onkeydown = function(e) {
             break;
     }
 };
+ymaps.ready(init);
+  function init() {
+    var myMap = new ymaps.Map("map", {
+      center: [7.89096874, 98.29429420],
+      zoom: 17
+    });
+}
