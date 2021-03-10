@@ -527,6 +527,7 @@ template {
 
 .hotel-grid {
   display: flex;
+  justify-content: space-between;
 }
 
 .hotel-slider {
@@ -582,6 +583,107 @@ template {
   background-repeat: no-repeat;
   background-position: center;
   right: 16px;
+}
+
+.hotel-booking {
+  padding: 28px;
+  background-color: #0A223D;
+  color: #fff;
+  width: 350px;
+  min-height: 210px;
+  border-radius: 8px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.hotel-booking-and-map-wrapper {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hotel-booking__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+
+.hotel-booking__price {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-booking__price-start {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.hotel-booking__price-sum {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: -4px;
+}
+
+.hotel-booking__price-per-room {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.hotel-booking__person-room {
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 5px;
+}
+
+.hotel-booking-person-room__description {
+  margin-left: 9px;
+}
+
+.hotel-booking-guests {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.hotel-booking-room {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hotel-booking-button {
+  background-color: #EC1F46;
+  border: none;
+  color: inherit;
+  width: 100%;
+  min-height: 45px;
+  border-radius: 4px;
+}
+
+.hotel-booking-call-center {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.hotel-booking-call-center__text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.hotel-booking-call-center__num {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  margin-left: 8px;
+}
+
+.hotel-booking-call-center__tel {
+  text-decoration: none;
+  color: inherit;
 }
 
 .swiper-container {
