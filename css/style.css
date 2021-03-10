@@ -668,6 +668,9 @@ template {
   width: 100%;
   min-height: 45px;
   border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
 }
 
 .hotel-booking-call-center {
@@ -692,6 +695,11 @@ template {
 .hotel-booking-call-center__tel {
   text-decoration: none;
   color: inherit;
+}
+
+.hotel__map {
+  height: 100%;
+  width: 100%;
 }
 
 .swiper-container {
@@ -902,6 +910,9 @@ template {
   }
   .hotel-info {
     padding-bottom: 38px;
+  }
+  .hotel-map {
+    height: 173px;
   }
   .swiper-container {
     height: 175px;
