@@ -784,6 +784,8 @@ template {
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .newsletter-title__strong {
@@ -1033,6 +1035,10 @@ template {
   .container {
     max-width: 700px;
   }
+  .newsletter {
+    padding-top: 92px;
+    padding-bottom: 93px;
+  }
   .about {
     padding-top: 40px;
     padding-bottom: 60px;
@@ -1108,8 +1114,13 @@ template {
 }
 
 @media (max-width: 700px) {
-  .subscribe__input {
+  .newsletter {
+    padding-top: 76px;
+    padding-bottom: 83px;
+  }
+  .newsletter-title {
     flex-basis: 100%;
+    margin-bottom: 37px;
   }
 }
 
@@ -1137,6 +1148,17 @@ template {
   }
   .about__description {
     max-width: 90%;
+  }
+  .about-button {
+    top: 45px;
+  }
+  .about-button_prev {
+    left: 50%;
+    transform: translate(-350%, -50%);
+  }
+  .about-button_next {
+    right: 50%;
+    transform: translate(350%, -50%);
   }
 }
 
@@ -1170,13 +1192,19 @@ template {
   .hotel__swiper {
     height: 175px;
   }
+  .newsletter {
+    padding-top: 76px;
+    padding-bottom: 83px;
+  }
   .about {
     padding-bottom: 50px;
   }
   .about__title {
     font-size: 18px;
     line-height: 23px;
+    margin: auto;
     margin-bottom: 42px;
+    width: 245px;
   }
   .about__description {
     margin-bottom: 36px;
@@ -1184,15 +1212,6 @@ template {
   }
   .about-slide {
     max-width: 281px;
-  }
-  .about-button {
-    top: 45px;
-  }
-  .about-button_prev {
-    left: 40.5px;
-  }
-  .about-button_next {
-    right: 40.5px;
   }
 }
 /*# sourceMappingURL=style.css.map */

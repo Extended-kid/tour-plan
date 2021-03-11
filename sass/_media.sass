@@ -56,6 +56,9 @@
 @media   ( max-width: 768px )
   .container
     max-width: 700px
+  .newsletter
+    padding-top: 92px
+    padding-bottom: 93px
   .about
     padding-top: 40px
     padding-bottom: 60px
@@ -115,9 +118,12 @@
     margin-bottom: 25px
 
 @media   ( max-width: 700px )
-  .subscribe
-    &__input
+  .newsletter
+    padding-top: 76px
+    padding-bottom: 83px
+    &-title
       flex-basis: 100%
+      margin-bottom: 37px
 @media   ( max-width: 576px )
   .logo
     width: 99px
@@ -139,6 +145,14 @@
   .about
     &__description
       max-width: 90%
+    &-button
+      top: 45px
+      &_prev
+        left: 50%
+        transform: translate(-350%,-50%)
+      &_next
+        right: 50%
+        transform: translate(350%,-50%)
 @media   ( max-width: 320px )
   .container
     max-width: 280px
@@ -162,20 +176,19 @@
       height: 173px
   .hotel__swiper
     height: 175px
+  .newsletter
+    padding-top: 76px
+    padding-bottom: 83px
   .about
     padding-bottom: 50px
     &__title
       font-size: 18px
       line-height: 23px
+      margin: auto
       margin-bottom: 42px
+      width: 245px
     &__description
       margin-bottom: 36px
       max-width: 219px
     &-slide
       max-width: 281px
-    &-button
-      top: 45px
-      &_prev
-        left: 40.5px
-      &_next
-        right: 40.5px
