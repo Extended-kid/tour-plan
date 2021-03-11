@@ -1011,13 +1011,21 @@ template {
 }
 
 .activities__name {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   margin-top: 143px;
   max-width: 145px;
   margin-left: 26px;
   z-index: 4;
+}
+
+.activities__name_wide {
+  max-width: 170px;
+}
+
+.activities__name_wider {
+  max-width: 200px;
 }
 
 .activities__button {
