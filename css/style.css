@@ -1619,6 +1619,40 @@ template {
   .packages-card-secondary {
     min-height: 500px;
   }
+  .footer__logo {
+    width: 104px;
+    height: 120px;
+    align-self: start;
+    grid-row: span 1;
+    order: -2;
+  }
+  .footer__social {
+    order: -1;
+    align-self: center;
+    margin: 0;
+  }
+  .footer__list {
+    margin-top: 38px;
+    grid-row: span 1;
+  }
+  .footer__wrapper-top {
+    grid-template-columns: 1fr 1fr minmax(202px, 1fr);
+    grid-template-rows: min-content 1fr;
+    margin-bottom: 59px;
+  }
+  .footer__wrapper-contact {
+    grid-template-columns: minmax(0, 539px);
+    margin-bottom: 56px;
+  }
+  .footer__details {
+    margin-bottom: 40px;
+  }
+  .footer__contacts-form {
+    padding: 0;
+  }
+  .footer__items-wrapper {
+    margin: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1650,6 +1684,9 @@ template {
   .activities__card {
     width: 339px;
     margin-bottom: 20px;
+  }
+  .footer__wrapper-top {
+    grid-template-columns: minmax(0, 200px) minmax(0, 298px) minmax(202px, 1fr);
   }
 }
 

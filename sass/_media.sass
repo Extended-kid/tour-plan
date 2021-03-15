@@ -79,6 +79,35 @@
         min-height: 500px
       &-secondary
         min-height: 500px
+  .footer
+    &__logo
+      width: 104px
+      height: 120px
+      align-self: start
+      grid-row: span 1
+      order: -2
+    &__social
+      order: -1
+      align-self: center
+      margin: 0
+    &__list
+      margin-top: 38px
+      grid-row: span 1
+    &__wrapper
+      &-top
+        grid-template-columns: 1fr 1fr minmax(202px, 1fr)
+        grid-template-rows: min-content 1fr
+        margin-bottom: 59px
+      &-contact
+        grid-template-columns: minmax(0, 539px)
+        margin-bottom: 56px
+    &__details
+      margin-bottom: 40px
+    &__contacts-form
+      padding: 0
+
+    &__items-wrapper
+      margin: 0
 @media   ( max-width: 768px )
   .container
     max-width: 700px
@@ -101,7 +130,10 @@
     &__card
       width: 339px
       margin-bottom: 20px
-
+  .footer
+    &__wrapper
+      &-top
+        grid-template-columns: minmax(0,200px) minmax(0, 298px) minmax(202px, 1fr)
 @media   ( max-width: 767px )
   .container
     width: 92%
