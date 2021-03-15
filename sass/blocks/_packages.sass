@@ -13,10 +13,12 @@
     display: grid
     grid-template-columns: repeat(3, 1fr)
     grid-template-rows: repeat (2, 1fr )
+    justify-items: stretch
     grid-gap: 30px
   &-card
     &-main
       display: flex
+      justify-content: space-between
       max-height: 500px
       max-width: 730px
       position: relative
@@ -42,7 +44,7 @@
       &__wrapper
         background-color: $dark
         color: $light
-        padding: 47px 21px 30px 43px
+        padding: 47px 21px 0px 43px
         width: 50%
         height: 100%
       &__stars
@@ -88,6 +90,7 @@
         display: flex
         justify-content: space-between
         align-items: center
+        margin-bottom: 30px
         &__price-new
           position: relative
           font-weight: bold
@@ -121,8 +124,7 @@
       overflow: hidden
       &__img
         width: 100%
-        height: 50%
-        max-height: 250px
+        height: 100%
         object-fit: cover
       &__label
         position: absolute
