@@ -8,9 +8,19 @@
       display: grid
       grid-template-columns: minmax(0, 286px) minmax(0, 286px) minmax(0, 345px) minmax(195px, 1fr)
       grid-template-rows: 1fr minmax(23px, min-content)
+      margin-bottom: 89px
+    &-contact
+      display: grid
+      grid-template-columns: repeat(2, 1fr )
+      color: #BDBDBD
+      margin-bottom: 95px
+    &-bottom
+      position: relative
   &__logo
     grid-row: span 2
     align-self: center
+  &__contacts-form
+    padding-left: 20px
   &__list
     grid-row: span 2
     &_span-1
@@ -30,6 +40,16 @@
     text-transform: uppercase
     &_m0
       margin: 0
+    &_mb3
+      margin-bottom: 34px
+      color: #fff
+  &__sub-title
+    margin: 0
+    font-weight: normal
+    font-size: 14px
+    line-height: 160%
+    margin-bottom: 22px
+
   &__icons
     display: flex
     justify-content: space-between
@@ -47,6 +67,62 @@
     font-weight: normal
     font-size: 14px
     line-height: 160%
+    &-flex
+      display: flex
+      margin-bottom: 24px
+  &__icon
+    width: 41px
   &__link
     color: inherit
     text-decoration: none
+  &__form
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+  &__input
+    padding: 0 23px
+    height: 50px
+    border-radius: 4px
+    flex-basis: 48%
+    margin-bottom: 15px
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+  &__textarea
+    padding: 23px
+    border-radius: 4px
+    flex-basis: 100%
+    margin-bottom: 22px
+    max-height: 123px
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+  &__button
+    border: none
+    width: 160px
+    min-height: 50px
+    padding: 17px 0
+    color: $light
+    background-color: $primary
+    border-radius: 4px
+  &__hint
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: #E0E0E0
+  &__items-wrapper
+    max-width: 285px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: #fff
+    font-size: 12px
+    line-height: 15px
+    margin: 0 auto
+  &__absolute
+    position: absolute
+    bottom: 0
+    right: 0
+    width: 136px
+    height: 22px
