@@ -1109,7 +1109,7 @@ template {
 .about {
   background-color: #F5FAFE;
   padding-top: 40px;
-  padding-bottom: 70px;
+  padding-bottom: 55px;
 }
 
 .about__title {
@@ -1206,7 +1206,7 @@ template {
   width: 30px;
   z-index: 10;
   position: absolute;
-  top: 50%;
+  top: 43%;
   transform: translateY(-50%);
   cursor: pointer;
   border: none;
