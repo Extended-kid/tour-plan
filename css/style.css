@@ -1210,10 +1210,12 @@ template {
 .about__description {
   font-size: 12px;
   line-height: 160%;
+  max-height: 120px;
   width: 537px;
   text-align: justify;
   margin: 0;
   margin-bottom: 30px;
+  overflow: auto;
 }
 
 .about-button {
@@ -1680,7 +1682,7 @@ template {
   }
   .about {
     padding-top: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
   }
   .about__title {
     font-size: 30px;
