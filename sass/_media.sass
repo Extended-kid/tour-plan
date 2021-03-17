@@ -39,7 +39,7 @@
         line-height: 15px
   .search
     &__input
-      width: 340px
+      max-width: 340px
   .hotel__swiper
     width: 700px
     margin-bottom: 30px
@@ -139,9 +139,45 @@
 @media   ( max-width: 767px )
   .container
     width: 92%
+  body
+    padding-top: 78px
   .navbar
-    &__search, &__user, &-menu
+    &__mobile
+      &_fixed
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        z-index: 99
+    &__search, &__user
       display: none
+    &__search
+      margin-bottom: 23px
+      &_mobile
+        display: block
+    &__user
+      margin-bottom: 11px
+      &_mobile
+        display: block
+        display: flex
+        flex-direction: column
+    &-menu
+      flex-direction: column
+      padding-top: 30px
+      &__item
+        margin-bottom: 16px
+    &-bottom
+      display: none
+      &_visible
+        display: block
+        display: flex
+        flex-direction: column
+  .user
+    &__avatar
+      margin-bottom: 10px
+    &__name
+      margin: 0
+      color: #fff
   .menu
     &-button
       width: 16px
@@ -274,6 +310,9 @@
         max-width: 100%
         min-height: 500px
 @media   ( max-width: 576px )
+  .search
+    &__input
+      max-width: 245px
   .logo
     width: 99px
   .hotel__swiper

@@ -356,7 +356,7 @@ template {
 }
 
 .navbar {
-  border-color: #fff;
+  background-color: #fff;
 }
 
 .navbar-top {
@@ -1589,7 +1589,7 @@ template {
     line-height: 15px;
   }
   .search__input {
-    width: 340px;
+    max-width: 340px;
   }
   .hotel__swiper {
     width: 700px;
@@ -1719,8 +1719,54 @@ template {
   .container {
     width: 92%;
   }
-  .navbar__search, .navbar__user, .navbar-menu {
+  body {
+    padding-top: 78px;
+  }
+  .navbar__mobile_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .navbar__search, .navbar__user {
     display: none;
+  }
+  .navbar__search {
+    margin-bottom: 23px;
+  }
+  .navbar__search_mobile {
+    display: block;
+  }
+  .navbar__user {
+    margin-bottom: 11px;
+  }
+  .navbar__user_mobile {
+    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar-menu {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  .navbar-menu__item {
+    margin-bottom: 16px;
+  }
+  .navbar-bottom {
+    display: none;
+  }
+  .navbar-bottom_visible {
+    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+  .user__avatar {
+    margin-bottom: 10px;
+  }
+  .user__name {
+    margin: 0;
+    color: #fff;
   }
   .menu-button {
     width: 16px;
@@ -1886,6 +1932,9 @@ template {
 }
 
 @media (max-width: 576px) {
+  .search__input {
+    max-width: 245px;
+  }
   .logo {
     width: 99px;
   }
