@@ -165,6 +165,8 @@
       padding-top: 30px
       &__item
         margin-bottom: 16px
+        &_mobile
+          display: block
     &-bottom
       display: none
       &_visible
@@ -430,3 +432,35 @@
       &-contact
         margin-top: -20px
         margin-bottom: 30px
+@media ( max-width: 768px ) and  ( max-height: 540px )
+  .navbar
+    &-menu
+      &__item
+        margin-bottom: 10px
+@media  ( max-width: 768px ) and ( max-height: 470px )
+  .navbar
+    &__search
+      margin-bottom: 10px
+    &-menu
+      &__item
+        margin-bottom: 10px
+@media  ( max-width: 768px ) and ( max-height: 470px )
+  .navbar
+    &-menu
+      flex-direction: row
+      flex-wrap: wrap
+      &__item
+        flex-basis: 50%
+    &__user
+      &_mobile
+        flex-direction: row
+  .user
+    align-items: center
+    &__avatar
+      margin: 0
+      margin-right: 20px
+@media  ( max-width: 740px ) and ( max-height: 470px )
+  .navbar
+    &-menu
+      &__item
+        flex-basis: 33%
