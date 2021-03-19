@@ -2223,6 +2223,9 @@ template {
   .navbar-menu__item {
     margin-bottom: 10px;
   }
+}
+
+@media (max-height: 540px) {
   .modal__title {
     margin-bottom: 10px;
   }
