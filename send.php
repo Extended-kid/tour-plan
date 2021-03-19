@@ -66,7 +66,7 @@ try {
 
 // Отображение результата
 if (empty($name) && empty($phone) && empty($message)){
-      header('Location: index.html');
+      header('Location: subscribe.html');
     } else{
       header('Location: thankyou.html');
     }

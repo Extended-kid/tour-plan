@@ -1043,6 +1043,21 @@ template {
   line-height: 19px;
 }
 
+.home-link {
+  color: #fff;
+  text-decoration: none;
+  flex-basis: 100%;
+  margin-top: 20px;
+}
+
+.home-link__button {
+  display: block;
+}
+
+.hotel-info__subscribe {
+  flex-wrap: wrap;
+}
+
 .newsletter {
   position: relative;
   display: flex;
