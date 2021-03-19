@@ -710,7 +710,31 @@ quest">
     </div>
     <!-- /.container -->
   </footer>
+  <div class="modal">
+    <div class="modal__overlay">
 
+    </div>
+    <!-- /.modal__overlay -->
+    <div class="modal__window">
+      <button class="modal__close">
+        <img src="./img/close.svg" alt="icon: close">
+      </button>
+      <div class="modal__contacts-form">
+        <h3 class="modal__title modal__title_mb3">booking</h3>
+        <form action="send.php" method="POST" class="modal__form">
+          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
+          <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
+          <input type="text" class="input modal__input" placeholder="Email*" name="phone">
+          <textarea cols="30" rows="10" class="modal__textarea" placeholder="Message" name="message"></textarea>
+          <button type="submit" class="button modal__button">Send</button>
+          <span class="modal__hint">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__contacts-form -->
+    </div>
+    <!-- /.modal__window -->
+  </div>
+  <!-- /.modal -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="./js/parallax.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=3576590a-6a51-4a9e-bc9b-b6a261ce800a&lang=ru_RU">
