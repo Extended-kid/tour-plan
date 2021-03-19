@@ -1778,6 +1778,16 @@ template {
   }
 }
 
+@media (max-width: 900px) {
+  .modal__button {
+    order: 1;
+  }
+  .modal__hint {
+    flex-basis: 100%;
+    margin-bottom: 15px;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     max-width: 700px;
@@ -2088,6 +2098,16 @@ template {
   .footer__input {
     flex-basis: 100%;
   }
+  .modal__window {
+    padding: 33px 60px;
+  }
+}
+
+@media (max-width: 400px) {
+  .modal__window {
+    max-width: 92%;
+    padding: 25px 40px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -2189,6 +2209,32 @@ template {
   .navbar-menu__item {
     margin-bottom: 10px;
   }
+  .modal__title {
+    margin-bottom: 10px;
+  }
+  .modal__textarea {
+    margin-bottom: 10px;
+    max-height: 80px;
+    overflow: scroll;
+  }
+  .modal__window {
+    width: 100%;
+    padding: 20px 20px;
+  }
+  .modal__input {
+    flex-basis: 49%;
+    order: -2;
+    margin-bottom: 10px;
+  }
+  .modal__input_basis100 {
+    flex-basis: 100%;
+  }
+  .modal__hint {
+    order: 1;
+    flex-basis: 49%;
+    text-align: end;
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 768px) and (max-height: 470px) {
@@ -2223,6 +2269,20 @@ template {
 @media (max-width: 740px) and (max-height: 470px) {
   .navbar-menu__item {
     flex-basis: 33%;
+  }
+}
+
+@media (max-width: 740px) and (max-height: 340px) {
+  .modal__window {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .modal__input {
+    max-height: 45px;
+  }
+  .modal__button {
+    min-height: fit-content;
+    height: 45px;
   }
 }
 /*# sourceMappingURL=style.css.map */
