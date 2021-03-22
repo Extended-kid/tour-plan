@@ -420,8 +420,8 @@
         subscribe to our
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
-      <form action="send.php" class="subscribe newsletter__subscribe" method="POST">
-        <input type="email" class="subscribe__input" placeholder="Your email address" name="newsletter-mail">
+      <form action="send.php" class="subscribe newsletter__subscribe form" method="POST">
+        <input type="email" class="subscribe__input" placeholder="Your email address" name="newsletter-mail" required>
         <button class="subscribe__button">
           Send
         </button>
@@ -685,9 +685,13 @@ quest">
         <!-- /.footer__details -->
         <div class="footer__contacts-form">
           <h3 class="footer__title footer__title_mb3">Send us a message</h3>
-          <form action="send.php" method="POST" class="footer__form">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-            <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
+          <form action="send.php" method="POST" class="footer__form form">
+            <div class="footer__input-block">
+              <input type="text" class="input footer__input" placeholder="Your Full Name*" required name="name">
+            </div>
+            <div class="footer__input-block">
+              <input type="tel" class="input footer__input phone-mask" placeholder="Phone Number*" required name="phone">
+            </div>
             <textarea  cols="30" rows="10" class="footer__textarea" placeholder="Message" name="message"></textarea>
             <button type="submit" class="button footer__button">Send</button>
             <span class="footer__hint">* Required Fields</span>
@@ -721,10 +725,10 @@ quest">
       </button>
       <div class="modal__contacts-form">
         <h3 class="modal__title modal__title_mb3">booking</h3>
-        <form action="send.php" method="POST" class="modal__form">
-          <input type="text" class="input modal__input modal__input_basis100" placeholder="Your Full Name*" name="name">
-          <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
-          <input type="text" class="input modal__input" placeholder="Email*" name="phone">
+        <form action="send.php" method="POST" class="modal__form form">
+          <input type="text" class="input modal__input modal__input_basis100" placeholder="Your Full Name*" name="name" minlength="2" required>
+          <input type="tel" class="input modal__input phone-mask" placeholder="Phone Number*" required name="phone">
+          <input type="email" class="input modal__input" placeholder="Email*" required name="email" >
           <textarea cols="30" rows="10" class="modal__textarea" placeholder="Message" name="message"></textarea>
           <button type="submit" class="button modal__button">Send</button>
           <span class="modal__hint">* Required Fields</span>
@@ -740,6 +744,8 @@ quest">
   <script src="https://api-maps.yandex.ru/2.1/?apikey=3576590a-6a51-4a9e-bc9b-b6a261ce800a&lang=ru_RU">
   </script>
   <script src="./js/modal.js"></script>
+  <script src="./js/jquery.validate.min.js"></script>
+  <script src="./js/jquery.mask.min.js"></script>
   <script src="./js/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </body>

@@ -16,6 +16,20 @@ img {
   max-width: 100%;
 }
 
+label.error {
+  padding-left: 5px;
+  color: #ff2400;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+.subscribe > label {
+  position: absolute;
+  top: 55px;
+  left: 5px;
+  z-index: 50;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1108,7 +1122,6 @@ template {
 .subscribe {
   display: flex;
   position: relative;
-  overflow: hidden;
   border-radius: 4px;
   height: 55px;
 }
@@ -1366,6 +1379,7 @@ template {
   padding-top: 108px;
   padding-bottom: 46px;
   color: #fff;
+  width: 100vw;
 }
 
 .footer__wrapper-top {
@@ -1499,11 +1513,15 @@ template {
   padding: 0 23px;
   height: 50px;
   border-radius: 4px;
-  flex-basis: 48%;
-  margin-bottom: 15px;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+  width: 100%;
+}
+
+.footer__input-block {
+  flex-basis: 48%;
+  margin-bottom: 15px;
 }
 
 .footer__textarea {
@@ -1585,6 +1603,7 @@ template {
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 478px;
+  overflow: auto;
   padding: 33px 88px;
   background-color: #0A223D;
   border-radius: 8px;
@@ -1612,7 +1631,6 @@ template {
   font-size: 18px;
   line-height: 23px;
   margin: 0;
-  margin-bottom: 15px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -1629,7 +1647,7 @@ template {
   padding: 0 23px;
   height: 50px;
   border-radius: 4px;
-  margin-bottom: 15px;
+  margin-top: 15px;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
@@ -1639,6 +1657,7 @@ template {
 .modal__textarea {
   padding: 23px;
   border-radius: 4px;
+  margin-top: 15px;
   margin-bottom: 15px;
   max-height: 123px;
   font-weight: normal;
@@ -1715,7 +1734,7 @@ template {
     font-size: 12px;
     line-height: 15px;
   }
-  .search__input {
+  .search__input-block {
     max-width: 340px;
   }
   .hotel__swiper {
@@ -1804,16 +1823,6 @@ template {
   }
   .footer__items-wrapper {
     margin: 0;
-  }
-}
-
-@media (max-width: 900px) {
-  .modal__button {
-    order: 1;
-  }
-  .modal__hint {
-    flex-basis: 100%;
-    margin-bottom: 15px;
   }
 }
 
@@ -2072,7 +2081,7 @@ template {
 }
 
 @media (max-width: 576px) {
-  .search__input {
+  .search__input-block {
     max-width: 245px;
   }
   .logo {
@@ -2124,18 +2133,8 @@ template {
   .footer__items-wrapper {
     width: 277px;
   }
-  .footer__input {
+  .footer__input-block {
     flex-basis: 100%;
-  }
-  .modal__window {
-    padding: 33px 60px;
-  }
-}
-
-@media (max-width: 400px) {
-  .modal__window {
-    max-width: 92%;
-    padding: 25px 40px;
   }
 }
 
@@ -2240,35 +2239,6 @@ template {
   }
 }
 
-@media (max-height: 540px) {
-  .modal__title {
-    margin-bottom: 10px;
-  }
-  .modal__textarea {
-    margin-bottom: 10px;
-    max-height: 80px;
-    overflow: scroll;
-  }
-  .modal__window {
-    width: 100%;
-    padding: 20px 20px;
-  }
-  .modal__input {
-    flex-basis: 49%;
-    order: -2;
-    margin-bottom: 10px;
-  }
-  .modal__input_basis100 {
-    flex-basis: 100%;
-  }
-  .modal__hint {
-    order: 1;
-    flex-basis: 49%;
-    text-align: end;
-    margin-bottom: 0;
-  }
-}
-
 @media (max-width: 768px) and (max-height: 470px) {
   .navbar__search {
     margin-bottom: 10px;
@@ -2304,17 +2274,9 @@ template {
   }
 }
 
-@media (max-width: 740px) and (max-height: 340px) {
+@media (max-width: 740px) and (max-height: 478px) {
   .modal__window {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .modal__input {
-    max-height: 45px;
-  }
-  .modal__button {
-    min-height: fit-content;
-    height: 45px;
+    max-height: 100vh;
   }
 }
 /*# sourceMappingURL=style.css.map */

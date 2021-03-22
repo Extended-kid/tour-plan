@@ -34,5 +34,31 @@ $(document).ready(function () {
 		) {
 			closeModal();
 		}
-	});
+  });
+  
+  //обработка форм
+  $('.form').each(function() {
+    $(this).validate({
+    messages: {
+      name: {
+        required: "Please specify your name",
+      },
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com"
+      },
+      phone: {
+        required: "We need your phone number to contact you",
+      }
+    }
+  }
+  );
+  })
+  //mask jquery
+  $('.phone-mask').mask('+7 (000) 000-00-00', {
+    'translation': {
+      0: { pattern: /[0-9*]/ },
+      7: { pattern: /[7*]/ }
+    }
+  });
 });
