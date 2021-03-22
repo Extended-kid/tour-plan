@@ -30,13 +30,6 @@ label.error {
   z-index: 50;
 }
 
-.footer__input-block > label {
-  position: absolute;
-  top: 55px;
-  left: 5px;
-  z-index: 50;
-}
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1372,6 +1365,14 @@ template {
   padding-top: 108px;
   padding-bottom: 46px;
   color: #fff;
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .footer__wrapper-top {
