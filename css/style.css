@@ -1064,21 +1064,6 @@ template {
   line-height: 19px;
 }
 
-.home-link {
-  color: #fff;
-  text-decoration: none;
-  flex-basis: 100%;
-  margin-top: 20px;
-}
-
-.home-link__button {
-  display: block;
-}
-
-.hotel-info__subscribe {
-  flex-wrap: wrap;
-}
-
 .newsletter {
   position: relative;
   display: flex;
@@ -1693,6 +1678,29 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
+}
+
+.home-link {
+  color: #fff;
+  text-decoration: none;
+  flex-basis: 100%;
+  margin-top: 20px;
+  border: none;
+  padding: 11px 27px;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  max-width: 100px;
+}
+
+.hotel-info-subscribe {
+  flex-wrap: wrap;
+}
+
+.hotel-info-text {
+  flex-basis: 100%;
 }
 
 @media (max-width: 1200px) {
