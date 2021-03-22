@@ -147,6 +147,7 @@
       position: fixed
       top: 0
       left: 0
+      width: 100%
       right: 0
       z-index: 99
     &__search, &__user
@@ -361,6 +362,9 @@
     &__input
       &-block
         flex-basis: 100%
+@media   ( max-width: 400px )
+  .subscribe
+    width: 100%
 @media   ( max-width: 320px )
   .container
     max-width: 280px

@@ -30,6 +30,13 @@ label.error {
   z-index: 50;
 }
 
+.footer__input-block > label {
+  position: absolute;
+  top: 55px;
+  left: 5px;
+  z-index: 50;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1122,7 +1129,6 @@ template {
 .subscribe {
   display: flex;
   position: relative;
-  border-radius: 4px;
   height: 55px;
 }
 
@@ -1137,6 +1143,7 @@ template {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+  border-radius: 4px 4px 4px 4px;
 }
 
 .subscribe__button {
@@ -1144,6 +1151,7 @@ template {
   top: 0;
   right: 0;
   height: 100%;
+  border-radius: 0 4px 4px 0;
   width: 65px;
   border: none;
   color: #fff;
@@ -1379,7 +1387,6 @@ template {
   padding-top: 108px;
   padding-bottom: 46px;
   color: #fff;
-  width: 100vw;
 }
 
 .footer__wrapper-top {
@@ -1520,6 +1527,7 @@ template {
 }
 
 .footer__input-block {
+  position: relative;
   flex-basis: 48%;
   margin-bottom: 15px;
 }
@@ -1872,6 +1880,7 @@ template {
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
     right: 0;
     z-index: 99;
   }
@@ -2135,6 +2144,12 @@ template {
   }
   .footer__input-block {
     flex-basis: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .subscribe {
+    width: 100%;
   }
 }
 

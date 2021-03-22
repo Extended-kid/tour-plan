@@ -55,10 +55,9 @@ $(document).ready(function () {
   );
   })
   //mask jquery
-  $('.phone-mask').mask('+7 (000) 000-00-00', {
+  $('.phone-mask').mask('+7 (999) 999-99-99',  {
     'translation': {
-      0: { pattern: /[0-9*]/ },
-      7: { pattern: /[7*]/ }
+      9: { pattern: /[0-9*]/ }
     }
   });
 });
