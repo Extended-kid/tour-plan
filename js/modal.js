@@ -6,14 +6,13 @@ $(document).ready(function () {
   closeModalButton.on("click", closeModal);
 
   function openModal() {
-    
     var modalOverlay = $('.modal__overlay')
     var modalWindow = $('.modal__window')
     modalOverlay.addClass('modal__overlay_visible')
     modalWindow.addClass('modal__window_visible')
   };
-  function closeModal() {
-    
+  function closeModal(event) {
+    event.preventDefault(event);
     var modalOverlay = $('.modal__overlay')
     var modalWindow = $('.modal__window')
     modalOverlay.removeClass('modal__overlay_visible')
@@ -22,6 +21,7 @@ $(document).ready(function () {
   document.onkeydown = function(e) {
     switch (e.keyCode) {
         case 27:
+          console.log('escape')
           closeModal();
           break;
     }
