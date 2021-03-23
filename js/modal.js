@@ -49,6 +49,7 @@ $(document).ready(function () {
       },
       phone: {
         required: "Please specify your phone",
+        minlength: "Enter your phone in international format"
       }
     }
   }

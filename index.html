@@ -691,7 +691,7 @@ quest">
                 <input type="text" class="input footer__input" placeholder="Your Full Name*" required name="name">
               </div>
               <div class="footer__input-block">
-                <input type="tel" class="input footer__input phone-mask" placeholder="Phone Number*" required name="phone">
+                <input type="tel" class="input footer__input phone-mask" placeholder="Phone Number*" minlength="18" required name="phone">
               </div>
             </div>
             <textarea  cols="30" rows="10" class="footer__textarea" placeholder="Message" name="message"></textarea>
@@ -729,7 +729,7 @@ quest">
         <h3 class="modal__title modal__title_mb3">booking</h3>
         <form action="send.php" method="POST" class="modal__form form">
           <input type="text" class="input modal__input modal__input_basis100" placeholder="Your Full Name*" name="name" minlength="2" required>
-          <input type="tel" class="input modal__input phone-mask" placeholder="Phone Number*" required name="phone">
+          <input type="tel" class="input modal__input phone-mask" placeholder="Phone Number*" required minlength="18" name="phone">
           <input type="email" class="input modal__input" placeholder="Email*" required name="email" >
           <textarea cols="30" rows="10" class="modal__textarea" placeholder="Message" name="message"></textarea>
           <button type="submit" class="button modal__button">Send</button>
