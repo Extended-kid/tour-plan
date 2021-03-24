@@ -244,10 +244,10 @@
           <form action="send.php" method="POST" class="footer__form form">
             <div class="footer__wrapper">
               <div class="footer__input-block">
-                <input type="text" class="input footer__input" placeholder="Your Full Name*" required name="name">
+                <input type="text" class="input footer__input" placeholder="Your Full Name*" minlength="2" required name="name">
               </div>
               <div class="footer__input-block">
-                <input type="tel" class="input footer__input phone-mask" placeholder="Phone Number*" required
+                <input type="tel" class="input footer__input phone-mask" minlength="18" placeholder="Phone Number*" required
                   name="phone">
               </div>
             </div>
