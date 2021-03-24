@@ -30,6 +30,10 @@ label.error {
   z-index: 50;
 }
 
+.button {
+  cursor: pointer;
+}
+
 .button:hover {
   background-color: #f83658;
 }
