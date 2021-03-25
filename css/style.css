@@ -1902,6 +1902,13 @@ template {
   }
   .footer__wrapper-top {
     grid-template-columns: minmax(0, 200px) minmax(0, 298px) minmax(202px, 1fr);
+    margin-bottom: 40px;
+  }
+  .footer__title_mb1 {
+    margin-bottom: 25px;
+  }
+  .footer__details {
+    margin-bottom: 60px;
   }
 }
 
