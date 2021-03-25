@@ -2230,6 +2230,12 @@ template {
     padding-top: 76px;
     padding-bottom: 83px;
   }
+  .newsletter-container {
+    max-width: 280px;
+  }
+  .newsletter-title__strong {
+    font-size: 30px;
+  }
   .about {
     padding-bottom: 50px;
   }

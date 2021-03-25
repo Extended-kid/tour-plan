@@ -62,5 +62,5 @@ $(document).ready(function () {
     }
   });
   AOS.init();
-  $("input:text:visible:first").focus();
+  // $("input:text:visible:first").focus();
 });
