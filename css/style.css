@@ -2242,6 +2242,9 @@ template {
   .newsletter-container {
     max-width: 280px;
   }
+  .newsletter-title {
+    font-size: 20px;
+  }
   .newsletter-title__strong {
     font-size: 30px;
   }
@@ -2259,6 +2262,7 @@ template {
     margin-bottom: 36px;
     max-width: 219px;
     max-height: 266px;
+    text-align: left;
   }
   .about-slide {
     max-width: 281px;
