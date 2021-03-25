@@ -30,20 +30,19 @@ label.error {
   z-index: 50;
 }
 
-.button {
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: #f83658;
-}
-
-li > a:hover {
-  text-decoration: underline;
-}
-
-li > a:active {
-  color: gray;
+@media (min-width: 992px) {
+  .button {
+    cursor: pointer;
+  }
+  .button:hover {
+    background-color: #f83658;
+  }
+  li > a:hover {
+    text-decoration: underline;
+  }
+  li > a:active {
+    color: gray;
+  }
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
