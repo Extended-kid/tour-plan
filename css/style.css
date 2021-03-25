@@ -2249,6 +2249,7 @@ template {
   .about__description {
     margin-bottom: 36px;
     max-width: 219px;
+    max-height: 266px;
   }
   .about-slide {
     max-width: 281px;
