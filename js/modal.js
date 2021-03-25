@@ -61,6 +61,13 @@ $(document).ready(function () {
       9: { pattern: /[0-9*]/ }
     }
   });
+
+  // modal menu
+  var menuButton = document.querySelector(".menu-button")
+  menuButton.addEventListener('click', function () {
+    document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom_visible")
+  })
+
   AOS.init();
   // $("input:text:visible:first").focus();
 });
