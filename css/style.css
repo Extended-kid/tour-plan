@@ -1879,7 +1879,7 @@ template {
   }
   .about {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
   }
   .about__title {
     font-size: 30px;
@@ -1891,6 +1891,7 @@ template {
   }
   .about__description {
     max-width: 455px;
+    max-height: 133px;
   }
   .activities {
     padding-bottom: 50px;
