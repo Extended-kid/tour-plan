@@ -10,11 +10,12 @@
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
-    href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Nunito:wght@400;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;700;800&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="./css/aos.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -111,11 +112,11 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__wrapper-top">
-        <a href="https://iljalobossok.ru/homeworks/best-tour-plan/" class="footer__logo">
+        <a href="#" class="footer__logo">
           <img src="./img/vertical-logo.svg" alt="Best Tour Plan Logo">
         </a>
         <div class="footer__list footer__list_categories">
-          <h2 class="footer__title">ALL CATEGORIES</h2>
+          <h3 class="footer__title">ALL CATEGORIES</h3>
           <ul class="footer__ul">
             <li class="footer__item">
               <a href="#" class="footer__link">All Deals</a>
@@ -145,7 +146,7 @@
         </div>
         <!-- /.footer__list -->
         <div class="footer__list footer__list_span-1 footer__list_additional">
-          <h2 class="footer__title">ADDITIONAL INFORMATION</h2>
+          <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
           <ul class="footer__ul">
             <li class="footer__item">
               <a href="#" class="footer__link">About Us</a>
@@ -169,7 +170,7 @@
         </div>
         <!-- /.footer__list -->
         <div class="footer__social">
-          <h2 class="footer__title footer__title_m0">Social Network</h2>
+          <h3 class="footer__title footer__title_m0">Social Network</h3>
           <div class="footer__icons">
             <a href="https://www.facebook.com/" target="_blank">
               <img src="./img/facebook.svg" alt="">
@@ -185,7 +186,7 @@
         </div>
         <!-- /.footer__social -->
         <div class="footer__list footer__list_span-1 footer__list_legal">
-          <h2 class="footer__title">LEGAL INFORMATION</h2>
+          <h3 class="footer__title">LEGAL INFORMATION</h3>
           <ul class="footer__ul">
             <li class="footer__item">
               <a href="#" class="footer__link">Terms & Conditions</a>
@@ -206,7 +207,7 @@
       <!-- /.footer__wrapper-top -->
       <div class="footer__wrapper-contact">
         <div class="footer__details">
-          <h2 class="footer__title footer__title_mb1">Contact Details</h2>
+          <h3 class="footer__title footer__title_mb1">Contact Details</h3>
           <p class="footer__sub-title">Feel free to contact us by phone, email or by our contact form</p>
           <ul class="footer__ul">
             <li class="footer__item footer__item-flex">
@@ -242,15 +243,15 @@
         </div>
         <!-- /.footer__details -->
         <div class="footer__contacts-form">
-          <h2 class="footer__title footer__title_mb3">Send us a message</h2>
+          <h3 class="footer__title footer__title_mb3">Send us a message</h3>
           <form action="send.php" method="POST" class="footer__form form">
             <div class="footer__wrapper">
               <div class="footer__input-block">
-                <input type="text" class="input footer__input" placeholder="Your Full Name*" minlength="2" required name="name">
+                <input type="text" class="input footer__input" placeholder="Your Full Name*" required name="name">
               </div>
               <div class="footer__input-block">
-                <input type="tel" class="input footer__input phone-mask" minlength="18" placeholder="Phone Number*" required
-                  name="phone">
+                <input type="tel" class="input footer__input phone-mask" placeholder="Phone Number*" minlength="18"
+                  required name="phone">
               </div>
             </div>
             <textarea cols="30" rows="10" class="footer__textarea" placeholder="Message" name="message"></textarea>
@@ -275,12 +276,41 @@
     </div>
     <!-- /.container -->
   </footer>
-
+  <div class="modal">
+    <div class="modal__overlay">
+  
+    </div>
+    <!-- /.modal__overlay -->
+    <div class="modal__window">
+      <button class="modal__close">
+        <img src="./img/close.svg" alt="icon: close">
+      </button>
+      <div class="modal__contacts-form">
+        <h3 class="modal__title modal__title_mb3">booking</h3>
+        <form action="send.php" method="POST" class="modal__form form">
+          <input type="text" class="input modal__input modal__input_basis100" placeholder="Your Full Name*" name="name"
+            minlength="2" required>
+          <input type="tel" class="input modal__input phone-mask" placeholder="Phone Number*" required minlength="18"
+            name="phone">
+          <input type="email" class="input modal__input" placeholder="Email*" required name="email">
+          <textarea cols="30" rows="10" class="modal__textarea" placeholder="Message" name="message"></textarea>
+          <button type="submit" class="button modal__button">Send</button>
+          <span class="modal__hint">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__contacts-form -->
+    </div>
+    <!-- /.modal__window -->
+  </div>
+  <!-- /.modal -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="./js/parallax.min.js"></script>
   <script src="./js/modal.js"></script>
   <script src="./js/jquery.validate.min.js"></script>
+  <script src="./js/aos.js"></script>
   <script src="./js/jquery.mask.min.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
-</body>
-
-</html>
+  </body>
+  
+  </html>
