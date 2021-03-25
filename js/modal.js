@@ -69,5 +69,5 @@ $(document).ready(function () {
   })
 
   AOS.init();
-  $("input:text:visible:first").focus();
+  $(".search__input").focus();
 });
