@@ -2258,6 +2258,12 @@ template {
     padding-top: 40px;
     padding-bottom: 40px;
   }
+  .activities__card:nth-child(2) {
+    order: 1;
+  }
+  .activities__card:nth-child(4) {
+    order: 2;
+  }
   .activities__title {
     margin-bottom: 36px;
     font-size: 18px;
