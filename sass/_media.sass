@@ -121,8 +121,24 @@
 @media   ( max-width: 768px )
   .container
     max-width: 700px
-  .hotel-slider__button
-    top: 52%
+  .navbar
+    &-top
+      padding-bottom: 20px
+    &__search
+      margin-left: 47px
+    &-menu
+      padding: 22px 10px
+      padding-bottom: 12px
+  .search__input
+    max-width: 340px
+  .hotel
+    &-slider__button
+      top: 52%
+    &-booking
+      padding: 29px 22px 27px 23px
+      width: 48.6%
+      &-call-center
+        margin-bottom: 17px
   .newsletter
     padding-top: 92px
     padding-bottom: 93px
@@ -138,6 +154,10 @@
     &__description
       max-width: 455px
       max-height: 133px
+    &-button
+      top: 49.5%
+      &_next
+        right: 3px
   .activities
     padding-bottom: 50px
     &__card
@@ -148,6 +168,12 @@
       &-top
         grid-template-columns: minmax(0,200px) minmax(0, 298px) minmax(202px, 1fr)
         margin-bottom: 40px
+    &__logo
+      width: 94px
+      padding: 0
+    &__social
+      margin-top: 15px
+      margin-left: -15px
     &__title
       &_mb1
         margin-bottom: 25px
@@ -157,7 +183,7 @@
   .container
     width: 92%
   body
-    padding-top: 78px
+    padding-top: 76px
   .navbar
     &_fixed
       position: fixed
@@ -170,6 +196,7 @@
       display: none
     &__search
       margin-bottom: 23px
+      margin-left: 0
       &_mobile
         display: block
     &__user
@@ -254,6 +281,7 @@
         margin-bottom: 10px
     &__social
       grid-column: span 1
+      margin: 0
       margin-bottom: 30px
       display: flex
       flex-direction: column
@@ -408,8 +436,11 @@
       left: 0
       width: 100%
       height: 100%
+  .breadcrumb
+    padding-left: 2px
   .hotel
     padding-bottom: 40px
+    padding-top: 0
     &-slider__button
       background-size: 4px
       top: 53%
@@ -421,8 +452,16 @@
       padding-bottom: 38px
     &-map
       height: 173px
+    &-info
+      &__stars
+        margin-right: 13px
+      &__offer
+        height: 20px
+        text-align: center
+        padding: 3px 9px
+        margin-left: 3px
   .hotel__swiper
-    height: 175px
+    height: 180px
   .newsletter
     padding-top: 76px
     padding-bottom: 83px
@@ -501,7 +540,7 @@
     &-menu
       &__item
         margin-bottom: 10px
-@media  ( max-width: 768px ) and ( max-height: 470px )
+@media  ( max-width: 767px ) and ( max-height: 470px )
   .navbar
     &-menu
       flex-direction: row
