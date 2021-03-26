@@ -1,7 +1,6 @@
 $(document).ready(function () {
   var modalButton = $('[data-toggle=modal]');
   var closeModalButton = $('.modal__close');
-  console.log(modalButton);
   modalButton.on("click", openModal);
   closeModalButton.on("click", closeModal);
 
@@ -20,23 +19,6 @@ $(document).ready(function () {
     modalOverlay.removeClass('modal__overlay_visible')
     modalWindow.removeClass('modal__window_visible')
   };
-  document.onkeydown = function(e) {
-    switch (e.keyCode) {
-        case 27:
-          console.log('escape')
-          closeModal();
-          break;
-    }
-  };
-  $(document).on('click', function(e){
-		if (!(
-		($(e.target).parents('.modal__window').length)
-		||	($(e.target).hasClass('modal__window'))
-		||	($(e.target).hasClass('hotel-booking-button')))
-		) {
-			closeModal();
-		}
-  });
     
   $('.modal__window')
     .on('shown', function () {
