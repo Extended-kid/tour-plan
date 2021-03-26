@@ -1905,6 +1905,9 @@ template {
   .container {
     max-width: 700px;
   }
+  .hotel-slider__button {
+    top: 52%;
+  }
   .newsletter {
     padding-top: 92px;
     padding-bottom: 93px;
@@ -2263,6 +2266,16 @@ template {
   }
   .hotel {
     padding-bottom: 40px;
+  }
+  .hotel-slider__button {
+    background-size: 4px;
+    top: 53%;
+  }
+  .hotel-slider__button_prev {
+    left: -5px;
+  }
+  .hotel-slider__button_next {
+    right: -5px;
   }
   .hotel-info {
     padding-bottom: 38px;
