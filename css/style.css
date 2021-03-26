@@ -39,6 +39,12 @@ textarea {
   border: none;
 }
 
+.button {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 @media (min-width: 992px) {
   .button {
     cursor: pointer;
@@ -714,6 +720,8 @@ template {
   border: none;
   color: inherit;
   width: 100%;
+  max-width: 294px;
+  max-height: 45px;
   min-height: 45px;
   border-radius: 4px;
   font-weight: 600;
@@ -880,6 +888,8 @@ template {
   line-height: 160.6%;
   max-width: 299px;
   margin-bottom: 44px;
+  max-height: 157px;
+  overflow: auto;
 }
 
 .packages-card-main-person-room {
@@ -949,6 +959,8 @@ template {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
+  max-width: 122px;
+  max-height: 40px;
 }
 
 .packages-card-secondary {
@@ -1080,6 +1092,8 @@ template {
   color: inherit;
   background-color: #EC1F46;
   border-radius: 4px;
+  max-width: 122px;
+  max-height: 40px;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
@@ -1378,6 +1392,8 @@ template {
   font-size: 12px;
   line-height: 16px;
   padding: 7px 22px 7px 21px;
+  max-width: 100px;
+  max-height: 30px;
   margin-bottom: 24px;
   margin-left: 26px;
   background-color: #EC1F46;
@@ -1564,6 +1580,8 @@ template {
   font-size: 12px;
   line-height: 15px;
   min-height: 50px;
+  max-height: 50px;
+  max-width: 160px;
   padding: 17px 0;
   color: #fff;
   background-color: #EC1F46;
