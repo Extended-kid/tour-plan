@@ -8,6 +8,7 @@ $(document).ready(function () {
   function openModal() {
     var modalOverlay = $('.modal__overlay')
     var modalWindow = $('.modal__window')
+    $("body").addClass("modal-open");
     modalOverlay.addClass('modal__overlay_visible')
     modalWindow.addClass('modal__window_visible')
   };
@@ -15,6 +16,7 @@ $(document).ready(function () {
     event.preventDefault(event);
     var modalOverlay = $('.modal__overlay')
     var modalWindow = $('.modal__window')
+    $("body").removeClass("modal-open")
     modalOverlay.removeClass('modal__overlay_visible')
     modalWindow.removeClass('modal__window_visible')
   };
@@ -35,7 +37,18 @@ $(document).ready(function () {
 			closeModal();
 		}
   });
-  
+    
+  $('.modal__window')
+    .on('shown', function () {
+      $('body').on('wheel.modal mousewheel.modal', function () {
+        return false;
+      });
+    })
+    .on('hidden', function () {
+      $('body').off('wheel.modal mousewheel.modal');
+    });
+
+
   //обработка форм
   $('.form').each(function() {
     $(this).validate({

@@ -30,6 +30,15 @@ label.error {
   z-index: 50;
 }
 
+input {
+  border: none;
+}
+
+textarea {
+  resize: none;
+  border: none;
+}
+
 @media (min-width: 992px) {
   .button {
     cursor: pointer;
@@ -43,6 +52,10 @@ label.error {
   li > a:active {
     color: gray;
   }
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

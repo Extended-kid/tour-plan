@@ -19,7 +19,11 @@ label.error
   top: 55px
   left: 5px
   z-index: 50
-.footer__input-block > label
+input
+  border: none
+textarea
+  resize: none
+  border: none
 @media   ( min-width: 992px )
   .button
     cursor: pointer
@@ -31,3 +35,6 @@ label.error
       text-decoration: underline
     &:active
       color: gray
+
+body.modal-open
+  overflow: hidden
