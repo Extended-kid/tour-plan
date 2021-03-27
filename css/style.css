@@ -2464,9 +2464,6 @@ template {
   .footer__button {
     order: 1;
   }
-  .footer__wrapper-top {
-    margin-bottom: 17px;
-  }
   .footer__wrapper-contact {
     margin-top: -20px;
     margin-bottom: 30px;
