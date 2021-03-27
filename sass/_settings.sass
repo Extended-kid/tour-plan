@@ -31,14 +31,26 @@ textarea
 @media   ( min-width: 992px )
   .button
     cursor: pointer
+
     &:hover
       background-color: #f83658
-
+  a > img
+    transition: transform .2s ease-in-out
+    &:hover
+      transform: scale(1.15)
+  .about-button, .hotel-slider__button
+    transition: transform .2s ease-in-out
+    &:hover
+      background-size: 12px
   li > a
     &:hover
       text-decoration: underline
     &:active
       color: gray
-
+  a
+    &:hover
+      text-decoration: underline
+    &:active
+      color: gray
 body.modal-open
   overflow: hidden

@@ -52,10 +52,28 @@ textarea {
   .button:hover {
     background-color: #f83658;
   }
+  a > img {
+    transition: transform .2s ease-in-out;
+  }
+  a > img:hover {
+    transform: scale(1.15);
+  }
+  .about-button, .hotel-slider__button {
+    transition: transform .2s ease-in-out;
+  }
+  .about-button:hover, .hotel-slider__button:hover {
+    background-size: 12px;
+  }
   li > a:hover {
     text-decoration: underline;
   }
   li > a:active {
+    color: gray;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  a:active {
     color: gray;
   }
 }
