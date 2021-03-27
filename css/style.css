@@ -1994,6 +1994,11 @@ template {
   .about-button_next {
     right: 3px;
   }
+  .packages__title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 50px;
+  }
   .activities {
     padding-bottom: 50px;
   }
@@ -2212,10 +2217,6 @@ template {
 }
 
 @media (max-width: 600px) {
-  .packages__title {
-    font-size: 30px;
-    margin-bottom: 40px;
-  }
   .packages__wrapper {
     grid-template-columns: 1fr;
     grid-template-rows: repeat 5, 1fr;
@@ -2434,6 +2435,11 @@ template {
     margin-bottom: 36px;
     font-size: 18px;
     line-height: 23px;
+  }
+  .packages__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 50px;
   }
   .packages-card-main__wrapper {
     padding: 45px 20px 0 20px;
