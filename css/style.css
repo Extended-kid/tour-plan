@@ -1983,9 +1983,15 @@ template {
     width: 339px;
     margin-bottom: 20px;
   }
+  .footer {
+    padding-top: 60px;
+  }
   .footer__wrapper-top {
     grid-template-columns: minmax(0, 200px) minmax(0, 298px) minmax(202px, 1fr);
     margin-bottom: 40px;
+  }
+  .footer__wrapper-contact {
+    margin-bottom: 63px;
   }
   .footer__logo {
     width: 94px;
@@ -2188,6 +2194,10 @@ template {
 }
 
 @media (max-width: 600px) {
+  .packages__title {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
   .packages__wrapper {
     grid-template-columns: 1fr;
     grid-template-rows: repeat 5, 1fr;
@@ -2329,6 +2339,10 @@ template {
     padding-bottom: 40px;
     padding-top: 0;
   }
+  .hotel-booking-call-center__num {
+    margin-left: 5px;
+    margin-right: 3px;
+  }
   .hotel-slider__button {
     background-size: 4px;
     top: 53%;
@@ -2352,7 +2366,6 @@ template {
     height: 20px;
     text-align: center;
     padding: 3px 9px;
-    margin-left: 3px;
   }
   .hotel__swiper {
     height: 180px;

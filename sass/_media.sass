@@ -162,10 +162,13 @@
       width: 339px
       margin-bottom: 20px
   .footer
+    padding-top: 60px
     &__wrapper
       &-top
         grid-template-columns: minmax(0,200px) minmax(0, 298px) minmax(202px, 1fr)
         margin-bottom: 40px
+      &-contact
+        margin-bottom: 63px
     &__logo
       width: 94px
       padding: 0
@@ -324,6 +327,9 @@
         min-height: 530px
 @media   ( max-width: 600px )
   .packages
+    &__title
+      font-size: 30px
+      margin-bottom: 40px
     &__wrapper
       grid-template-columns: 1fr
       grid-template-rows: repeat (5, 1fr )
@@ -439,6 +445,9 @@
   .hotel
     padding-bottom: 40px
     padding-top: 0
+    &-booking-call-center__num
+      margin-left: 5px
+      margin-right: 3px
     &-slider__button
       background-size: 4px
       top: 53%
@@ -457,7 +466,6 @@
         height: 20px
         text-align: center
         padding: 3px 9px
-        margin-left: 3px
   .hotel__swiper
     height: 180px
   .newsletter
