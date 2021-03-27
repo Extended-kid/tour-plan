@@ -1791,12 +1791,6 @@ template {
     width: 48%;
     margin-bottom: 20px;
   }
-  .packages-card-main {
-    min-height: 530px;
-  }
-  .packages-card-secondary {
-    min-height: 530px;
-  }
   .packages-card-secondary__wrapper {
     display: flex;
     flex-direction: column;
