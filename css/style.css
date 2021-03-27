@@ -1970,6 +1970,9 @@ template {
   .about-button {
     top: 49.5%;
   }
+  .about-button_prev {
+    left: 3px;
+  }
   .about-button_next {
     right: 3px;
   }
