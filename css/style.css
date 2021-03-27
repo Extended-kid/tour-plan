@@ -1571,7 +1571,7 @@ template {
 .footer__item-flex:nth-child(3) img {
   position: absolute;
   left: 3px;
-  top: 8px;
+  top: 5px;
 }
 
 .footer__link {
@@ -2439,7 +2439,7 @@ template {
   .packages__title {
     font-size: 18px;
     line-height: 23px;
-    margin-bottom: 50px;
+    margin-bottom: 42px;
   }
   .packages-card-main__wrapper {
     padding: 45px 20px 0 20px;
