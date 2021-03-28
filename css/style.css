@@ -1571,7 +1571,7 @@ template {
 .footer__item-flex:nth-child(3) img {
   position: absolute;
   left: 3px;
-  top: 5px;
+  top: 5.8px;
 }
 
 .footer__link {
